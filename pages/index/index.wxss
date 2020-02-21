@@ -27,16 +27,17 @@
   border-radius: 15rpx;
 }
 .dots{
-  width: auto;
+  width:200rpx;
   height: 10rpx;
   position: absolute;
   bottom: 20rpx;
   border-radius: 50rpx;
   left: 240rpx;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+ /* https://www.jianshu.com/p/d9373a86b748/ */
+  /* align-items: center; */
   padding: 3rpx 10rpx;
+
 }
 .dotsItem{
   width: 8rpx;
@@ -54,31 +55,89 @@
 /* 宫格导航 */
 .nav{
   width: 90%;
-  height: 132rpx;
+  height: 150rpx;
   margin: 0rpx auto;
-  margin-top: 40rpx;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  margin-top: 30rpx;
 }
 .navItem{
-  width: 94rpx;
-  font-size: 20rpx;
+  width: 100rpx;
   text-align: center;
-  line-height: 35rpx;
-  color: #aaa;
+  font-size: 23rpx;
+  color: rgb(202, 202, 202)
 }
 .navIcon{
-  width: 84rpx;
-  height: 84rpx;
+  width: 80rpx;
+  height: 80rpx;
+
 }
 /* 猜你喜欢 */
 .like{
   width: 90%;
   margin: 0rpx auto;
-  margin-top: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
 }
+.Title-left {
+  float: left;
+  font-size: 37rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  color: #333;
+}
+
+.Title-right {
+  float: right;
+  font-size: 26rpx;
+  color: #aaa;
+}
+
+.like-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.like-top{
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 15rpx;
+  position: relative;
+}
+.like-top-image{
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 15rpx;
+  position: relative;
+}
+.like-top-cover{
+  width: 190rpx;
+  height: 40rpx;
+  /* 透明背景层 */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1)); */
+  /* opacity: 0.3; */
+  position: absolute;
+  /* bottom: 0rpx; */
+  color: #fff;
+  font-size: 25rpx;
+  /* padding: 5rpx 10rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx; */
+}
+.like-bottom{
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 10rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;/*行数n*/
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
 .likeItemBox{
   width: 100%;
   display: flex;
@@ -100,6 +159,12 @@
   width: 100%;
   height: 100%;
   border-radius: 15rpx;
+}
+.barTitle {
+  width: 100%;
+  height: 56rpx;
+  padding: 20rpx 0rpx;
+  text-align: center;
 }
 .likeText{
   font-size: 28rpx;
@@ -155,6 +220,14 @@
   margin-left: 20rpx;
   display: flex;
   flex-direction: column;
+}
+
+.contents{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f1f1f1;
+  padding: 20rpx 0rpx;
 }
 .title{
   width: 100%;
