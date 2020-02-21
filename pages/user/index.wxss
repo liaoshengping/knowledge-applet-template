@@ -1,0 +1,19 @@
+/* pages/user/index.wxss */
+.person-box{
+  width: 90%;
+  margin: 0rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.person-image-box{
+  line-height: 180rpx;
+}
+.person-image-box>image{
+   width: 180rpx;
+   height: 180rpx;
+   border-radius: 300rpx;
+}
+.person-right{
+  
+}

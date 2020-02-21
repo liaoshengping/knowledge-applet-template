@@ -1,0 +1,10 @@
+<!--pages/user/index.wxml-->
+
+<view class="person-box">
+  <view class="person-image-box">
+    <image src="/static/image/banner1.jpg"></image>
+  </view>
+  <view class="person-right">
+     <view>奔跑</view>
+  </view>
+</view>

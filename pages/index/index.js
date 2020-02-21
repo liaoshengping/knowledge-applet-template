@@ -30,6 +30,8 @@ Page({
     
   },
   onLoad: function () {
+    var appid =wx.getAccountInfoSync().miniProgram.appId;
+  
     var that = this;
     var url = "http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45";
     utils.myRequest({
