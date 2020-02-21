@@ -1,0 +1,15 @@
+.search{
+  width: 90%;
+  height: 60rpx;
+  background-color: rgb(224, 224, 224);
+  margin: 0rpx auto;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.text{
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: rgb(155, 154, 154)
+}

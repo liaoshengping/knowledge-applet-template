@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search": "/component/search/home"
+  },
+  "navigationBarTitleText": "首页"
+}

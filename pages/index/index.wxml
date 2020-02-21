@@ -1,0 +1,22 @@
+
+
+<!-- 搜索框 -->
+<search></search>
+<!-- 轮播图 -->
+<view class="swiper-container">
+  <swiper class="swiper" autoplay="true" interval="3000"  bindchange="swiperChange">
+
+  <swiper-item class="swiperItem" wx:for="{{imageList}}">
+    <image src="{{item}}"></image>
+  </swiper-item>
+  </swiper>
+
+    <view class="dots">
+    <block wx:for="{{imageList.length}}" wx:key="index">
+      <!-- 根据index判断是否选中 -->
+      <view class="dotsItem{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+</view>
+
+

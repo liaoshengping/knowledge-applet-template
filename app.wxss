@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  margin: 0rpx auto;
+} 
+
+.common-view{
+  width: 90%;
+  margin: 0rpx auto;
+  position: relative;
+}
