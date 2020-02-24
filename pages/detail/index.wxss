@@ -1,0 +1,151 @@
+/* pages/detail/index.wxss */
+
+.top-big-box {
+  width: 100%;
+  height: 450rpx;
+  position: relative;
+}
+
+.backgroup-image {
+  width: 100%;
+  height: 450rpx;
+  filter: blur(10px);
+  z-index: 0;
+  position: absolute;
+}
+
+.content_bottoms_box {
+  margin-top: 50rpx;
+  height: 400rpx;
+  position: absolute;
+  width: 100%;
+}
+
+.content {
+  width: 90%;
+  margin: 0rpx auto;
+  display: flex;
+  align-content: space-between;
+  z-index: 1;
+}
+
+.content>view>image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 30rpx;
+}
+
+.content-detail {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+}
+
+.content-detail-title {
+  color: #fff;
+  font-size: 40rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttoms {
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttom {
+  background-color: red;
+  color: white;
+  padding: 15rpx 35rpx;
+  border-radius: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.list-big-box {
+  background-color: white;
+  position: relative;
+  top: -10rpx;
+  border-radius: 20rpx;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  border-bottom: 1rpx gainsboro solid;
+}
+
+.tab-item {
+  height: 100rpx;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active{
+  position: relative;
+  color: #333;
+}
+.active::after{
+  content: '';
+  width: 80rpx;
+  height: 5rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 150rpx;
+  background-color: orangered;
+}
+.play-tab{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  width: 90%;
+  margin: 0rpx auto;
+ border-bottom: 1rpx gainsboro solid;
+}
+
+.shaixuan>view{
+  margin-left: 1rpx;
+}
+
+.shaixuan{
+  width: auto;
+display: flex;
+justify-content: space-between;
+text-align: center;
+font-size: 30rpx;
+
+}
+
+.list{
+  width: 90%;
+  margin:0rpx auto;
+
+}
+
+.list-item{
+  display: flex;
+  height: 150rpx;
+  border-bottom: 1rpx gainsboro solid;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-time{
+  color: rgb(155, 155, 155);
+}
+
+.info{
+  margin-left: 40rpx;
+}
+.info>text{
+  color: rgb(155, 155, 155);
+  font-size: 25rpx;
+}

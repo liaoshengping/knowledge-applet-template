@@ -35,7 +35,7 @@
 </view>
 
 <view class="like-box">
- <view wx:for="{{guess}}" class="likeItem">
+ <view wx:for="{{guess}}" class="likeItem" bindtap="goToDetail">
   <view class="like-top" >
      <image src="{{item.coverMiddle}}" class="likeItemIcon"></image>
      <view class="likecover">4.6亿</view>
@@ -54,7 +54,7 @@
       <view class="Title-right">查看全部></view>
     </view>
     <block wx:for="{{xiaoshuocontent}}" wx:key="index">
-      <view class="content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+      <view class="content" bindtap="goToDetail" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
         <view class="contentImg">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
         </view>
@@ -78,8 +78,8 @@
       <view class="Title-left">脱口秀</view>
       <view class="Title-right">查看全部></view>
     </view>
-    <block wx:for="{{tuokocontent}}" wx:key="index">
-      <view class="content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+    <block wx:for="{{tuokocontent}}" wx:key="index" bindtap="goToDetail">
+      <view class="content"  bindtap="goToDetail" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
         <view class="contentImg">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
         </view>
@@ -99,8 +99,6 @@
       </view>
     </block>
   </view>
-
-    
   </view>
 
 

@@ -29,6 +29,11 @@ Page({
   tanchu:function(){
     
   },
+  goToDetail:function(){
+    wx.navigateTo({
+      url: '/pages/detail/index',
+    })
+  },
   onLoad: function () {
     var appid =wx.getAccountInfoSync().miniProgram.appId;
   

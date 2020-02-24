@@ -1,0 +1,47 @@
+<!--pages/search/index.wxml-->
+<view class="search-big-box">
+  <view class="search-gray">
+    <text class="icon-search"></text>
+    <input class="text" placeholder="搜索你想要的东西"></input>
+  </view>
+  <view class="cancle">取消</view>
+</view>
+
+<!-- 搜索历史 -->
+
+<view class="history-big-box">
+  <view class="tabBar">
+    <view class="big-titlle">
+      <text class="icon-edit" style="color:#0099CC"></text> 搜索历史
+    </view>
+    <view class="icon-delete"></view>
+  </view>
+
+  <view class="items">
+    <text class="items-text" wx:for="{{items}}" wx:key="index">{{item}}</text>
+  </view>
+</view>
+
+<view class="hot-big-box">
+  <view class="tabBar">
+    <view class="big-titlle">
+      <text class="icon-appreciate" style="color:#0099CC"></text> 热门搜索
+    </view>
+  </view>
+  <view class="hot-items">
+    <view wx:for="{{hot_lists}}" wx:key="index" class="hot-items-one">
+
+      <view class="number_and_name">
+        <view class="{{index <3?'is_red':''}}">{{index+1}}</view>
+        <view class="hot-items-text name">
+          {{item.name}}
+        </view>
+      </view>
+      
+      <view wx:if="{{item.status =='up'}}" class="icon-top status-up"></view>
+      <view wx:else class="icon-down status-down"></view>
+
+    </view>
+
+  </view>
+</view>

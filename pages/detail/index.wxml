@@ -1,0 +1,54 @@
+<view class="top-big-box">
+  <image src="/static/image/banner1.jpg" class="backgroup-image"></image>
+  <view class="content_bottoms_box">
+    <view class="content">
+      <view>
+        <image src="/static/image/banner1.jpg"></image>
+      </view>
+      <view class="content-detail">
+        <text class="content-detail-title">德云社师徒父子 西安站</text>
+        <text>某某某></text>
+        <text>234人订阅|已更新到2323期</text>
+      </view>
+    </view>
+    <view class="buttoms">
+      <view class="buttom">
+        <text class="icon-share"></text>分享</view>
+      <view class="buttom">
+        <text class="icon-add"></text>收藏</view>
+    </view>
+  </view>
+</view>
+
+<view class="list-big-box">
+  <view class="tab">
+    <view class="tab-item ">详情</view>
+    <view class="tab-item active">节目单</view>
+
+  </view>
+  <view class="play-tab">
+    <view class="paly">
+      <text class="icon-playfill"></text>播放全部</view>
+    <view class="shaixuan">
+      <view style="margin-right:10px">
+        <text class="icon-order"></text>正序</view>
+      <view>
+        <text class="icon-selection"></text>选集</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list-item" wx:for="{{lists}}" wx:key="index">
+      <view>{{index+1}}</view>
+      <view class='title-box'>
+        <view class="title">{{item.title}}</view>
+        <view class="info">
+          <text class="icon-video"></text>
+          <text style="margin-right:23rpx;">{{item.play_num}}</text>
+          <text class="icon-time"></text>
+          <text>{{item.update_time}}</text>
+        </view>
+      </view>
+      <view class="list-time">{{item.time}}</view>
+    </view>
+  </view>
+</view>
