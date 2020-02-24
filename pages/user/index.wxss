@@ -1,19 +1,86 @@
 /* pages/user/index.wxss */
-.person-box{
-  width: 90%;
+
+page {
+  background-color: rgb(231, 231, 231);
+}
+
+.topBar {
+  width: 100%;
+  height: 270rpx;
+  background-color: #fff;
+  margin: 0rpx auto;
+}
+
+.userImg {
+  width: 95%;
+  height: 200rpx;
   margin: 0rpx auto;
   display: flex;
   align-items: center;
+}
+
+.image_nickname {
+  width: 70%;
+  display: flex;
   justify-content: start;
+  align-items: center;
 }
-.person-image-box{
-  line-height: 180rpx;
+
+.nickname {
+  margin-left: 20rpx;
 }
-.person-image-box>image{
-   width: 180rpx;
-   height: 180rpx;
-   border-radius: 300rpx;
+
+.kefu {
+  width: 160rpx;
+  height: 50rpx;
+  font-size: 25rpx;
+  border-radius: 25rpx;
+  outline: none;
+  text-align: center;
+  line-height: 50rpx;
+  background-color: #f1f1f1;
 }
-.person-right{
-  
+
+.qiandao {
+  width: 90%;
+  margin: 0rpx auto;
+  height: 70rpx;
 }
+
+.qiandaoIcon {
+  float: right;
+  color: #d8d8d8;
+}
+
+.qiandaoText {
+  float: left;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.avatar>image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.bottomBar {
+  width: 100%;
+  margin-top: 10rpx;
+  background-color: white;
+}
+
+.itemBox {
+  display: flex;
+  width: 90%;
+  height: 60rpx;
+  padding: 20rpx 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+

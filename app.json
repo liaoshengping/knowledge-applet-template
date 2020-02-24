@@ -3,7 +3,12 @@
     "pages/detail/index",
     "pages/index/index",
     "pages/user/index",
+
      "pages/search/index"
+
+
+  
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +17,7 @@
     "navigationBarTextStyle": "black"
 
   },
-  "style": "v2",
+
   "sitemapLocation": "sitemap.json",
   "tabBar": {
       "color": "#cdcdcd",
@@ -37,12 +42,12 @@
           "selectedIconPath": "/static/icon/collection-selectIcon.png"
         },
         {
-          "pagePath": "pages/index/index",
+          "pagePath": "pages/user/index",
           "text": "我的",
           "iconPath": "/static/icon/user-icon.png",
           "selectedIconPath": "/static/icon/user-selectIcon.png"
         }
       ]
     },
-    "debug": true
+    "debug": false
 }

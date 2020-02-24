@@ -1,10 +1,52 @@
 <!--pages/user/index.wxml-->
 
-<view class="person-box">
-  <view class="person-image-box">
-    <image src="/static/image/banner1.jpg"></image>
+<view class='topBar'>
+
+  <view class='userImg'>
+    <view class='image_nickname'>
+      <view class='avatar'>
+        <image src='/static/image/banner1.jpg'></image>
+      </view>
+      <view class='nickname'>
+        <text>奔跑</text>
+      </view>
+    </view>
+    <view class='kefu'>
+      <text>联系客服</text>
+
+    </view>
   </view>
-  <view class="person-right">
-     <view>奔跑</view>
+  <view class='qiandao'>
+    <view class='qiandaoText'>签到</view>
+    <view class='qiandaoIcon'>
+      <text>></text>
+    </view>
+  </view>
+</view>
+
+<view class='bottomBar'>
+  <view class='itemBox'>
+    <view>定时关闭</view>
+    <view class='textIcon'>
+      <text>></text>
+    </view>
+  </view>
+    <view class='itemBox'>
+    <view>夜间模式</view>
+    <view class='textIcon'>
+      <switch></switch>
+    </view>
+  </view>
+    <view class='itemBox'>
+    <view>意见反馈</view>
+    <view class='textIcon'>
+      <text>></text>
+    </view>
+  </view>
+    <view class='itemBox'>
+    <view>切换帐号</view>
+    <view class='textIcon'>
+      <text>></text>
+    </view>
   </view>
 </view>

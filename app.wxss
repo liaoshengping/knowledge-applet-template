@@ -17,3 +17,7 @@
   margin: 0rpx auto;
   position: relative;
 }
+
+.textIcon{
+  color: gainsboro
+}
