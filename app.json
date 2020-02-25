@@ -1,53 +1,46 @@
 {
   "pages": [
-    "pages/detail/index",
     "pages/index/index",
+    "pages/detail/index",
     "pages/user/index",
-
-     "pages/search/index"
-
-
-  
-
+    "pages/search/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-
   },
-
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-      "color": "#cdcdcd",
-      "selectedColor": "#ff520f",
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "text": "首页",
-          "iconPath": "/static/icon/home-icon.png",
-          "selectedIconPath": "/static/icon/home-selectIcon.png"
-        },
-        {
-          "pagePath": "pages/index/index",
-          "text": "分类",
-          "iconPath": "/static/icon/fen-icon.png",
-          "selectedIconPath": "/static/icon/fen-selectIcon.png"
-        },
-        {
-          "pagePath": "pages/index/index",
-          "text": "收藏",
-          "iconPath": "/static/icon/collection-icon.png",
-          "selectedIconPath": "/static/icon/collection-selectIcon.png"
-        },
-        {
-          "pagePath": "pages/user/index",
-          "text": "我的",
-          "iconPath": "/static/icon/user-icon.png",
-          "selectedIconPath": "/static/icon/user-selectIcon.png"
-        }
-      ]
-    },
-    "debug": false
+    "color": "#cdcdcd",
+    "selectedColor": "#ff520f",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/icon/home-icon.png",
+        "selectedIconPath": "/static/icon/home-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "分类",
+        "iconPath": "/static/icon/fen-icon.png",
+        "selectedIconPath": "/static/icon/fen-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "收藏",
+        "iconPath": "/static/icon/collection-icon.png",
+        "selectedIconPath": "/static/icon/collection-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "/static/icon/user-icon.png",
+        "selectedIconPath": "/static/icon/user-selectIcon.png"
+      }
+    ]
+  },
+  "debug": false
 }
